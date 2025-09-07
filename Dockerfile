@@ -7,9 +7,8 @@ WORKDIR /app/frontend
 # Copy package files
 COPY frontend/package*.json ./
 
-# Install dependencies
-# Use ci where lockfile exists; install all deps to build, then prune
-RUN npm ci
+# Install dependencies (tolerant to lockfile drift)
+RUN npm install --no-audit --no-fund
 
 # Copy frontend source code
 COPY frontend/ ./
