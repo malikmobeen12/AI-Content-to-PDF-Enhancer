@@ -1,4 +1,4 @@
-## AI Content‑to‑PDF Enhancer — Quickstart
+## AI Content‑to‑PDF Enhancer 
 
 ### What it is
 A small web app that lets you paste a URL or text, then:
