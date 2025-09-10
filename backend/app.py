@@ -380,8 +380,10 @@ def health_check():
 
 
 # Get the absolute path to the frontend build directory
-FRONTEND_BUILD_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                                  '..', 'frontend', 'build'))
+
+FRONTEND_BUILD_DIR = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), 'frontend', 'build')
+)
 
 
 @app.route('/')
