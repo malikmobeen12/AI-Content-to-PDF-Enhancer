@@ -26,7 +26,7 @@ python -m venv ../venv  # optional if you don’t already have it
 ../venv/Scripts/pip install -r requirements.txt  # Windows
 # or: ../venv/bin/pip install -r requirements.txt  # macOS/Linux
 
-copy .env.example .env  # if present; otherwise create .env
+create .env
 # .env needs:
 # GROQ_API_KEY=your_key_here
 ```
